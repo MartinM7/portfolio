@@ -1,55 +1,234 @@
-<header class="border-t-8 border-red-800 md:flex md:items-center md:justify-evenly p-4 pb-0 shadow-lg md:pb-4">
+<body class="font-roboto flex flex-col min-h-screen">
+  <header class="border-t-8 border-red-800 md:flex md:items-center md:justify-evenly p-4 pb-0 md:pb-4">
   
-  <!-- Logo text or image -->
-  <div class="flex items-center justify-between mb-4 md:mb-0">
-    <h1 class="leading-none text-3xl text-grey-darkest">
-      <a class="font-roboto font-normal no-underline text-grey-darkest hover:text-black" href="#">
-        <span class="text-red-800 font-roboto font-extrabold">martin</span>Maier
+    <!-- Logo text or image -->
+    <div class="flex font-roboto items-center justify-between mb-4 md:mb-0">
+      <h1 class="leading-none text-3xl text-grey-darkest">
+        <a class="font-roboto font-normal no-underline text-grey-darkest hover:text-black" href="#">
+          <span class="text-red-800 font-roboto font-extrabold">martin</span>Maier
+        </a>
+      </h1>
+  
+      <a class="text-black hover:text-orange md:hidden" href="#">
+        <i class="fa fa-2x fa-bars"></i>
       </a>
-    </h1>
+    </div>
+    <!-- END Logo text or image -->
+    
+    <!-- Search field -->
+    <!-- <form class="mb-4 w-full md:mb-0 md:w-1/4">
+      <label class="hidden" for="search-form">Search</label>
+      <input class="bg-grey-lightest border-2 focus:border-orange p-2 rounded-lg shadow-inner w-full" placeholder="Search" type="text">
+      <button class="hidden">Submit</button>
+    </form> -->
+    <!-- END Search field -->
+    
+    <!-- Global navigation -->
+    <nav>
+      <ul class="list-reset md:flex md:items-center">
+        <li class="md:ml-4">
+          <a class="block py-2 text-grey-darkest hover:text-gray-400 md:border-none md:p-0" href="#">
+            PROJECTS
+          </a>
+        </li>
+        <li class="md:ml-4">
+          <a class="block py-2 text-grey-darkest hover:text-gray-400 md:border-none md:p-0" href="#">
+            ABOUT
+          </a>
+        </li>
+        <li class="md:ml-4">
+          <a class="block py-2 text-grey-darkest hover:text-gray-400 md:border-none md:p-0" href="#">
+            CONTACT
+          </a>
+        </li>
+        <li class="md:ml-4">
+          <img class="w-7" src="/assets/img/aut.png" alt="flag">
+        </li>
+      </ul>
+    </nav>
+    <!-- END Global navigation -->
+  </header>
 
-    <a class="text-black hover:text-orange md:hidden" href="#">
-      <i class="fa fa-2x fa-bars"></i>
-    </a>
+  <div class="hero container-inner mx-auto flex justify-between py-16">
+    <div class="text-4xl font-bold w-3/5 pt-10">
+      <div>Web developer</div>
+      <div class="text-red-800">Welcome to my website</div>
+    </div>
+    <div>
+      <img src="/assets/img/table.svg" alt="table" class="ml-10 w-44">
+    </div>    
   </div>
-  <!-- END Logo text or image -->
+
+  <div class="container-inner mx-auto">
+    <p class="text-xl">hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, repellendus dolores distinctio adipisci reprehenderit est. Maxime ducimus rerum fuga aliquam voluptas eveniet ab maiores laudantium sint, quod possimus doloribus expedita!</p>
+
+    <div class="flex justify-between items-center py-16">
+      <div class="w-1/2">
+        <img src="/assets/img/sitting.svg" alt="sitting" class="w-80">
+      </div>
+      <div class="w-1/2 flex justify-end">
+        <img src="/assets/img/bug.svg" alt="bug" class="w-80">
+      </div>
+    </div>
+  </div>
+
+  <div class="projects container-inner mx-auto text-xl border-t border-gray-500 py-16">
+    <h2 class="font-bold text-center">I succesfully completed the Frontend Web Developer course at CodeFactory, <br> and these are some projects I've worked on:</h2>
+  </div>
+
+  <!-- card 1-->
+
+  <div class="projects container mx-auto my-5">
+
+    <div class="relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-72 mx-2">
+        
+        <div class="z-0 order-1 md:order-2 relative w-full md:w-2/5 h-80 md:h-full overflow-hidden rounded-lg md:rounded-none md:rounded-r-lg">
+            <div class="absolute inset-0 w-full h-full object-fill object-center bg-cover bg-bottom" style="background-image: url( /assets/img/travel.png ); background-blend-mode: multiply;"></div>
+            <div class="md:hidden absolute inset-0 h-full p-6 pb-6 flex flex-col-reverse justify-start items-start bg-gradient-to-b from-transparent via-transparent to-gray-900">
+                <h3 class="w-full font-bold text-2xl text-white leading-tight mb-2">HOTEL AMANEE</h3>
+                <h4 class="w-full text-xl text-gray-100 leading-tight">Bienvenido a</h4>
+            </div>
+            <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="50,0 100,0 50,100 0,100" />
+            </svg>
+        </div>
+
+        <div class="z-10 order-2 md:order-1 w-full h-full md:w-3/5 flex items-center -mt-6 md:mt-0">
+            <div class="p-8 md:pr-18 md:pl-14 md:py-12 mx-2 md:mx-0 h-full bg-white rounded-lg md:rounded-none md:rounded-l-lg shadow-xl md:shadow-none">
+                <h4 class="hidden md:block text-xl text-gray-400">Bienvenido a</h4>
+                <h3 class="hidden md:block font-bold text-2xl text-red-800">HOTEL AMANEE</h3>
+                <p class="text-gray-600 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione itaque perspiciatis quod sapiente quidem, vero consectetur quae iure error tempore reprehenderit unde veritatis fugit iusto nemo amet. Assumenda, quam facilis.</p>
+                <a class="flex items-baseline mt-3 text-red-800 hover:text-blue-900 focus:text-blue-900" href="">
+                    <span>Conocer más de Amanee</span>
+                    <span class="text-xs ml-1">&#x279c;</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- card 2 -->
+
+  <div class="projects container mx-auto my-5">
+
+    <div class="relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-72 mx-2">
+        
+        <div class="z-0 order-1 md:order-2 relative w-full md:w-2/5 h-80 md:h-full overflow-hidden rounded-lg md:rounded-none md:rounded-r-lg">
+            <div class="absolute inset-0 w-full h-full object-fill object-center bg-cover bg-bottom" style="background-image: url( /assets/img/like.png ); background-blend-mode: multiply;"></div>
+            <div class="md:hidden absolute inset-0 h-full p-6 pb-6 flex flex-col-reverse justify-start items-start bg-gradient-to-b from-transparent via-transparent to-gray-900">
+                <h3 class="w-full font-bold text-2xl text-white leading-tight mb-2">HOTEL AMANEE</h3>
+                <h4 class="w-full text-xl text-gray-100 leading-tight">Bienvenido a</h4>
+            </div>
+            <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="50,0 100,0 50,100 0,100" />
+            </svg>
+        </div>
+
+        <div class="z-10 order-2 md:order-1 w-full h-full md:w-3/5 flex items-center -mt-6 md:mt-0">
+            <div class="p-8 md:pr-18 md:pl-14 md:py-12 mx-2 md:mx-0 h-full bg-white rounded-lg md:rounded-none md:rounded-l-lg shadow-xl md:shadow-none">
+                <h4 class="hidden md:block text-xl text-gray-400">Bienvenido a</h4>
+                <h3 class="hidden md:block font-bold text-2xl text-red-800">HOTEL AMANEE</h3>
+                <p class="text-gray-600 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione itaque perspiciatis quod sapiente quidem, vero consectetur quae iure error tempore reprehenderit unde veritatis fugit iusto nemo amet. Assumenda, quam facilis.</p>
+                <a class="flex items-baseline mt-3 text-red-800 hover:text-blue-900 focus:text-blue-900" href="">
+                    <span>Conocer más de Amanee</span>
+                    <span class="text-xs ml-1">&#x279c;</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- card 3-->
+
+  <div class="projects container mx-auto my-5">
+
+    <div class="relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-72 mx-2">
+        
+        <div class="z-0 order-1 md:order-2 relative w-full md:w-2/5 h-80 md:h-full overflow-hidden rounded-lg md:rounded-none md:rounded-r-lg">
+            <div class="absolute inset-0 w-full h-full object-fill object-center bg-cover bg-bottom" style="background-image: url( /assets/img/cart.png ); background-blend-mode: multiply;"></div>
+            <div class="md:hidden absolute inset-0 h-full p-6 pb-6 flex flex-col-reverse justify-start items-start bg-gradient-to-b from-transparent via-transparent to-gray-900">
+                <h3 class="w-full font-bold text-2xl text-white leading-tight mb-2">HOTEL AMANEE</h3>
+                <h4 class="w-full text-xl text-gray-100 leading-tight">Bienvenido a</h4>
+            </div>
+            <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="50,0 100,0 50,100 0,100" />
+            </svg>
+        </div>
+
+        <div class="z-10 order-2 md:order-1 w-full h-full md:w-3/5 flex items-center -mt-6 md:mt-0">
+            <div class="p-8 md:pr-18 md:pl-14 md:py-12 mx-2 md:mx-0 h-full bg-white rounded-lg md:rounded-none md:rounded-l-lg shadow-xl md:shadow-none">
+                <h4 class="hidden md:block text-xl text-gray-400">Bienvenido a</h4>
+                <h3 class="hidden md:block font-bold text-2xl text-red-800">HOTEL AMANEE</h3>
+                <p class="text-gray-600 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione itaque perspiciatis quod sapiente quidem, vero consectetur quae iure error tempore reprehenderit unde veritatis fugit iusto nemo amet. Assumenda, quam facilis.</p>
+                <a class="flex items-baseline mt-3 text-red-800 hover:text-blue-900 focus:text-blue-900" href="">
+                    <span>Conocer más de Amanee</span>
+                    <span class="text-xs ml-1">&#x279c;</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- card 4 -->
+
+  <div class="projects container mx-auto my-5 mb-16">
+
+    <div class="relative rounded-lg flex flex-col md:flex-row items-center md:shadow-xl md:h-72 mx-2">
+        
+        <div class="z-0 order-1 md:order-2 relative w-full md:w-2/5 h-80 md:h-full overflow-hidden rounded-lg md:rounded-none md:rounded-r-lg">
+            <div class="absolute inset-0 w-full h-full object-fill object-center bg-cover bg-bottom" style="background-image: url( /assets/img/photographer.png ); background-blend-mode: multiply;"></div>
+            <div class="md:hidden absolute inset-0 h-full p-6 pb-6 flex flex-col-reverse justify-start items-start bg-gradient-to-b from-transparent via-transparent to-gray-900">
+                <h3 class="w-full font-bold text-2xl text-white leading-tight mb-2">HOTEL AMANEE</h3>
+                <h4 class="w-full text-xl text-gray-100 leading-tight">Bienvenido a</h4>
+            </div>
+            <svg class="hidden md:block absolute inset-y-0 h-full w-24 fill-current text-white -ml-12" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon points="50,0 100,0 50,100 0,100" />
+            </svg>
+        </div>
+
+        <div class="z-10 order-2 md:order-1 w-full h-full md:w-3/5 flex items-center -mt-6 md:mt-0">
+            <div class="p-8 md:pr-18 md:pl-14 md:py-12 mx-2 md:mx-0 h-full bg-white rounded-lg md:rounded-none md:rounded-l-lg shadow-xl md:shadow-none">
+                <h4 class="hidden md:block text-xl text-gray-400">Bienvenido a</h4>
+                <h3 class="hidden md:block font-bold text-2xl text-red-800">HOTEL AMANEE</h3>
+                <p class="text-gray-600 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione itaque perspiciatis quod sapiente quidem, vero consectetur quae iure error tempore reprehenderit unde veritatis fugit iusto nemo amet. Assumenda, quam facilis.</p>
+                <a class="flex items-baseline mt-3 text-red-800 hover:text-blue-900 focus:text-blue-900" href="">
+                    <span>Conocer más de Amanee</span>
+                    <span class="text-xs ml-1">&#x279c;</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="contact container-inner mx-auto text-xl pb-4 mb-4 border-t border-gray-500 py-16">
+    <h2 class="font-bold mb-6">Contact me:</h2>
+    <div class="text-xl mb-16">
+      If you’re looking to get in contact with me for business inquiries or if you have a question, feel free to <a class="text-red-800" href="mailto:martin.m@gmx.at">email me</a>. I’ll try to respond as soon as I can.
+    </div>
+
+  </div>
   
-  <!-- Search field -->
-  <!-- <form class="mb-4 w-full md:mb-0 md:w-1/4">
-    <label class="hidden" for="search-form">Search</label>
-    <input class="bg-grey-lightest border-2 focus:border-orange p-2 rounded-lg shadow-inner w-full" placeholder="Search" type="text">
-    <button class="hidden">Submit</button>
-  </form> -->
-  <!-- END Search field -->
+  <footer class="bg-red-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-8">
+      <div>Copyright 2021. All rights reserved</div>
+      <ul class="flex items-center">
+        <li class="mr-8">
+          <a href="mailto:martin.m@gmx.at" class="text-white hover:text-gray-400"><svg width="25" height="20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0h20A2.5 2.5 0 0 1 25 2.5v15a2.5 2.5 0 0 1-2.5 2.5h-20A2.5 2.5 0 0 1 0 17.5v-15C0 1.125 1.125 0 2.5 0zm20 4.225V2.5h-20v1.725l10 5 10-5zm0 2.8l-9.438 4.713a1.25 1.25 0 0 1-1.124 0L2.5 7.025V17.5h20V7.025z" fill-rule="nonzero"></path></svg></a>
+        </li>
+        <li class="mr-8">
+          <a href="https://github.com/MartinM7" target="_blank" class="text-white hover:text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+        </li>
+        <li class="mr-8">
+          <a href="https://github.com/MartinM7" target="_blank" class="text-white hover:text-gray-400"><svg width="20" height="19" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M10 0c1.814 0 3.487.435 5.02 1.306a9.827 9.827 0 0 1 3.639 3.542A9.33 9.33 0 0 1 20 9.734c0 2.121-.636 4.03-1.908 5.723a9.783 9.783 0 0 1-4.928 3.518c-.234.042-.408.012-.52-.09a.49.49 0 0 1-.17-.38l.006-.969c.005-.621.007-1.19.007-1.705 0-.82-.226-1.42-.677-1.8.495-.05.94-.126 1.335-.228a5.4 5.4 0 0 0 1.223-.494 3.62 3.62 0 0 0 1.055-.843c.282-.334.512-.777.69-1.33.178-.554.267-1.19.267-1.909a3.7 3.7 0 0 0-1.028-2.61c.32-.77.286-1.631-.105-2.586-.243-.076-.594-.03-1.054.14-.46.168-.86.354-1.198.557l-.495.304a9.478 9.478 0 0 0-2.5-.33c-.86 0-1.693.11-2.5.33a11.6 11.6 0 0 0-.553-.342c-.23-.135-.593-.298-1.088-.488-.494-.19-.863-.247-1.106-.171-.391.955-.426 1.816-.105 2.585A3.7 3.7 0 0 0 3.62 9.227c0 .719.089 1.352.267 1.902.178.549.406.993.683 1.33.278.339.627.622 1.048.85a5.4 5.4 0 0 0 1.224.494c.395.102.84.178 1.335.228-.338.305-.551.74-.638 1.306a2.631 2.631 0 0 1-.586.19 3.782 3.782 0 0 1-.742.063c-.287 0-.57-.09-.853-.272a2.256 2.256 0 0 1-.723-.792 2.068 2.068 0 0 0-.631-.66c-.256-.168-.471-.27-.645-.304l-.26-.038c-.182 0-.308.02-.378.057-.07.038-.09.087-.065.146.026.06.065.118.117.178.053.059.109.11.17.152l.09.063c.192.085.38.245.567.482.187.236.324.452.41.646l.13.292c.113.32.304.58.574.78.269.198.56.325.872.38.312.054.614.084.905.088.29.004.532-.01.723-.044l.299-.05c0 .32.002.694.007 1.12l.006.692a.49.49 0 0 1-.17.38c-.112.101-.286.13-.52.089a9.783 9.783 0 0 1-4.928-3.518C.636 13.763 0 11.855 0 9.734a9.33 9.33 0 0 1 1.341-4.886 9.827 9.827 0 0 1 3.64-3.542C6.512.436 8.185 0 10 0zM3.79 13.98c.025-.058-.005-.11-.092-.151-.087-.026-.143-.017-.17.025-.025.06.005.11.092.152.078.05.134.042.17-.025zm.403.432c.06-.043.052-.11-.026-.203-.087-.076-.157-.089-.209-.038-.06.042-.052.11.026.203.087.084.157.097.209.038zm.39.57c.078-.06.078-.14 0-.24-.07-.11-.143-.136-.221-.077-.078.042-.078.118 0 .228.078.11.152.14.221.089zm.547.532c.07-.067.052-.148-.052-.24-.104-.102-.19-.115-.26-.039-.078.068-.061.148.052.241.104.102.19.114.26.038zm.742.317c.026-.093-.03-.16-.169-.203-.13-.033-.213-.004-.247.09-.035.092.021.155.169.19.13.05.213.025.247-.077zm.82.064c0-.11-.073-.157-.22-.14-.14 0-.209.047-.209.14 0 .11.074.156.221.139.14 0 .209-.046.209-.14zm.756-.127c-.017-.093-.096-.131-.234-.114-.14.025-.2.088-.183.19.018.101.096.135.235.101.139-.034.2-.093.182-.177z" fill-rule="nonzero"></path></svg></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   
-  <!-- Global navigation -->
-  <nav>
-    <ul class="list-reset md:flex md:items-center">
-      <li class="md:ml-4">
-        <a class="block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
-          Projects
-        </a>
-      </li>
-      <li class="md:ml-4">
-        <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
-          About
-        </a>
-      </li>
-      <li class="md:ml-4">
-        <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
-          Contact
-        </a>
-      </li>
-      <li class="md:ml-4">
-        <a class="border-t block no-underline hover:underline py-2 text-grey-darkest hover:text-black md:border-none md:p-0" href="#">
-          Contact
-        </a>
-      </li>
-    </ul>
-  </nav>
-  <!-- END Global navigation -->
-
-</header>
-
-
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+  
+</body>

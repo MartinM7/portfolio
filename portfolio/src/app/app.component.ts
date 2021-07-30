@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  language = true;
+
+  changeLanguage() {
+    this.language == true ? this.language = false : this.language = true;
+  }
 }
